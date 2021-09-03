@@ -1,0 +1,93 @@
+5.3.1 Protocol: <Object> Conforms To <ANY>
+5.3.2 Protocol: <nil> Conforms To <Object>
+5.3.3 Protocol: <boolean> Conforms To <Object>
+5.3.4 Protocol: <Character> Conforms To <Object>
+5.3.5 Protocol: <Character factory> Conforms To <Object>
+5.3.6 Protocol: <failedMessage> Conforms To <Object>
+5.3.7 Protocol: <selector> Conforms To <Object>
+5.3.8 Protocol: <classDescription> Conforms To <Object>
+5.3.9 Protocol: <instantiator> Conforms To <Object>
+5.3.10 Protocol: <Object class> Conforms To <classDescription> <instantiator>
+5.4.1 Protocol: <valuable> Conforms To <Object>
+5.4.2 Protocol: <niladicValuable> Conforms To <valuable>
+5.4.3 Protocol: <niladicBlock> Conforms To <niladicValuable>
+5.4.4 Protocol: <monadicValuable> Conforms To <valuable>
+5.4.5 Protocol: <monadicBlock> Conforms To <monadicValuable>
+5.4.6 Protocol: <dyadicValuable> Conforms To <valuable>
+5.5.1 Protocol: <exceptionDescription> Conforms To <Object>
+5.5.2 Protocol: <exceptionSignaler> Conforms To <Object>
+5.5.3 Protocol: <exceptionBuilder> Conforms To <exceptionDescription> <exceptionSignaler>
+5.5.4 Protocol: <signaledException> Conforms To <exceptionDescription>
+5.5.5 Protocol: <exceptionSelector> Conforms To <Object>
+5.5.6 Protocol: <exceptionInstantiator> Conforms To <exceptionSelector> <exceptionSignaler> <instantiator>
+5.5.7 Protocol: <Exception class> Conforms To <classDescription> <exceptionInstantiator>
+5.5.8 Protocol: <Exception> Conforms To <exceptionBuilder> <signaledException>
+5.5.9 Protocol: <Notification class> Conforms To <Exception class>
+5.5.10 Protocol: <Notification> Conforms To <Exception>
+5.5.11 Protocol: <Warning class> Conforms To <Notification class>
+5.5.12 Protocol: <Warning> Conforms To <Notification>
+5.5.13 Protocol: <Error class> Conforms To <Exception class>
+5.5.14 Protocol: <Error> Conforms To <Exception>
+5.5.15 Protocol: <ZeroDivide factory> Conforms To <exceptionInstantiator>
+5.5.16 Protocol: <ZeroDivide> Conforms To <Error>
+5.5.17 Protocol: <MessageNotUnderstoodSelector> Conforms To <ExceptionSelector>
+5.5.18 Protocol: <MessageNotUnderstood> Conforms To <Error>
+5.5.19 Protocol: <exceptionSet> Conforms To <exceptionSelector>
+5.6.1 Protocol: <magnitude> Conforms To <Object>
+5.6.2 Protocol: <number> Conforms To <magnitude>
+5.6.3 Protocol: <rational> Conforms To <number>
+5.6.4 Protocol: <Fraction> Conforms To <rational>
+5.6.5 Protocol: <integer> Conforms To <rational>
+5.6.6 Protocol: <scaledDecimal> Conforms To <number>
+5.6.7 Protocol: <Float> Conforms To <number>
+5.6.8 Protocol: <floatCharacterization> Conforms To <Object>
+5.6.9 Protocol: <Fraction factory> Conforms To <Object>
+5.7.1 Protocol: <collection> Conforms To <Object>
+5.7.2 Protocol: <abstractDictionary> Conforms To <collection>
+5.7.3 Protocol: <Dictionary> Conforms To <abstractDictionary>
+5.7.4 Protocol: <IdentityDictionary> Conforms To <abstractDictionary>
+5.7.5 Protocol: <extensibleCollection> Conforms To <collection>
+5.7.6 Protocol: <Bag> Conforms To <extensibleCollection>
+5.7.7 Protocol: <Set> Conforms To <extensibleCollection>
+5.7.8 Protocol: <sequencedReadableCollection> Conforms To <collection>
+5.7.9 Protocol: <Interval> Conforms To <sequencedReadableCollection>
+5.7.10 Protocol: <readableString> Conforms To <magnitude> <sequencedReadableCollection>
+5.7.11 Protocol: <symbol> Conforms To <readableString>
+5.7.12 Protocol: <sequencedCollection> Conforms To <sequencedReadableCollection>
+5.7.13 Protocol: <String> Conforms To <readableString> <sequencedCollection>
+5.7.14 Protocol: <Array> Conforms To <sequencedCollection>
+5.7.15 Protocol: <ByteArray> Conforms To <sequencedCollection>
+5.7.16 Protocol: <sequencedContractibleCollection> Conforms To <collection>
+5.7.17 Protocol: <SortedCollection> Conforms To <extensibleCollection> <sequencedContractibleCollection> <sequencedReadableCollection>
+5.7.18 Protocol: <OrderedCollection> Conforms To <extensibleCollection> <sequencedContractibleCollection> <sequencedCollection>
+5.7.19 Protocol: <Interval factory> Conforms To <Object>
+5.7.20 Protocol: <collection factory> Conforms To <instantiator>
+5.7.21 Protocol: <Dictionary factory> Conforms To <collection factory>
+5.7.22 Protocol: <IdentityDictionary factory> Conforms To <abstractDictionary factory>
+5.7.23 Protocol: <initializableCollection factory> Conforms To <collection factory>
+5.7.24 Protocol: <Array factory> Conforms To <initializableCollection factory>
+5.7.25 Protocol: <Bag factory> Conforms To <initializableCollection factory>
+5.7.26 Protocol: <ByteArray factory> Conforms To <initializableCollection factory>
+5.7.27 Protocol: <OrderedCollection factory> Conforms To <initializableCollection factory>
+5.7.28 Protocol: <Set factory> Conforms To <initializableCollection factory>
+5.7.29 Protocol: <SortedCollection factory> Conforms To <initializableCollection factory>
+5.7.30 Protocol: <String factory> Conforms To <initializableCollection factory>
+5.8.1 Protocol: <DateAndTime> Conforms To <magnitude>
+5.8.2 Protocol: <Duration> Conforms To <magnitude>
+5.8.3 Protocol: <Duration factory> Conforms To <Object>
+5.8.4 Protocol: <DateAndTime factory> Conforms To <Object>
+5.9.1 Protocol: <sequencedStream> Conforms To <Object>
+5.9.2 Protocol: <gettableStream> Conforms To <Object>
+5.9.3 Protocol: <collectionStream> Conforms To <sequencedStream>
+5.9.4 Protocol: <puttableStream> Conforms To <Object>
+5.9.5 Protocol: <ReadStream> Conforms To <gettableStream> <collectionStream>
+5.9.6 Protocol: <WriteStream> Conforms To <puttableStream> <collectionStream>
+5.9.7 Protocol: <ReadWriteStream> Conforms To <ReadStream> <WriteStream>
+5.9.8 Protocol: <Transcript> Conforms To <puttableStream>
+5.9.9 Protocol: <ReadStream factory> Conforms To <Object>
+5.9.10 Protocol: <ReadWriteStream factory> Conforms To <Object>
+5.9.11 Protocol: <WriteStream factory> Conforms To <Object>
+5.10.1 Protocol: <FileStream> Conforms To <sequencedStream>
+5.10.2 Protocol: <readFileStream> Conforms To <FileStream> <gettableStream>
+5.10.3 Protocol: <writeFileStream> Conforms To <FileStream> <puttableStream>
+5.10.4 Protocol: <FileStream factory> Conforms To <Object>
